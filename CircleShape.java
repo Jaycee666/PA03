@@ -90,22 +90,21 @@ public class CircleShape {
 		*/
 		public void keepOnBoard(){
 			if (this.x < this.radius) {
-				// it went off the left edge! do something!
+				this.x = this.radius;
         this.vx = -this.vx;
 
 			}else if (this.x > CircleShape.boardWidth-this.radius) {
-				// it went off the right edge! do something!
+				this.x = CircleShape.boardWidth-this.radius;
         this.vx = -this.vx;
 			}
 
 			if (this.y < this.radius){
-				// it went above the top edge!
+			  this.y = this.radius;
         this.vy = -this.vy;
 
 			} else if (this.y > CircleShape.boardHeight-this.radius) {
-				// it went below the bottom edge!
+				this.y = CircleShape.boardHeight-this.radius;
         this.vy = -this.vy;
 			}
 		}
 }
-blablablabla
