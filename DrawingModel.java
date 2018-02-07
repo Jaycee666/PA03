@@ -18,7 +18,7 @@ public class DrawingModel {
 	create a model of a board that can simulate up to n moving circles
 	*/
 	public DrawingModel(int n){
-		circles = new CircleShape[3*n];
+		circles = new CircleShape[n];
 		this.init();
 	}
 
@@ -35,11 +35,17 @@ public class DrawingModel {
 			c = new CircleShape();
 			this.add(c);
 
-      			c = new RadiusChangingCircle();
-     			this.add(c);
-			
+      c = new RadiusChangingCircle();
+     	this.add(c);
+
 			c = new LianCircle();
-     			this.add(c);
+     	this.add(c);
+
+			c = new Wufan1515();
+			this.add(c);
+
+			c = new JianzhiCircle();
+			this.add(c);
 
 		}
 	}
