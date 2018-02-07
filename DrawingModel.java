@@ -18,7 +18,7 @@ public class DrawingModel {
 	create a model of a board that can simulate up to n moving circles
 	*/
 	public DrawingModel(int n){
-		circles = new CircleShape[n];
+		circles = new CircleShape[3*n];
 		this.init();
 	}
 
@@ -27,7 +27,7 @@ public class DrawingModel {
 	*/
 	private void init(){
 		CircleShape c;
-		for(int i=0; i< circles.length/2; i++){
+		for(int i=0; i< 10; i++){
 			// we go to circles.length/2 as we add 2 different kinds of circles
 			// each time through this loop.. with 5 classes you'll divide by 5
 			// WHEN YOU ADD ANOTHER SUBCLASS OF CIRCLESHAPE YOU NEED TO
@@ -35,8 +35,11 @@ public class DrawingModel {
 			c = new CircleShape();
 			this.add(c);
 
-      c = new RadiusChangingCircle();
-      this.add(c);
+      			c = new RadiusChangingCircle();
+     			this.add(c);
+			
+			c = new LianCircle();
+     			this.add(c);
 
 		}
 	}
