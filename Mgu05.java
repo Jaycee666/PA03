@@ -14,11 +14,11 @@ public class Mgu05 extends CircleShape {
 
 
 	public void update(double dt){
-		
+
 		if(this.factor%2 == 0){
 			this.color = new Color(181, 202, 160);
 		}
-		
+
 		this.x += factor*10*dt*vx;  // for now they do not move
 		this.y += factor*10*dt*vy;
 

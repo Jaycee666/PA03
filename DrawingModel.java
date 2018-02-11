@@ -47,6 +47,9 @@ public class DrawingModel {
 			c = new JianzhiCircle();
 			this.add(c);
 
+			c = new Mgu05();
+			this.add(c);
+
 		}
 	}
 
