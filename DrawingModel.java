@@ -49,6 +49,9 @@ public class DrawingModel {
 
 			c = new Mgu05();
 			this.add(c);
+			
+			c = new CliffeCircle();
+			this.add(c);
 
 		}
 	}
