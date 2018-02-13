@@ -35,11 +35,11 @@ public class DrawingModel {
 			c = new CircleShape();
 			this.add(c);
 
-      c = new RadiusChangingCircle();
-     	this.add(c);
+     			c = new RadiusChangingCircle();
+     			this.add(c);
 
 			c = new LianCircle();
-     	this.add(c);
+     			this.add(c);
 
 			c = new Wufan1515();
 			this.add(c);
